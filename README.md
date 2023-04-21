@@ -38,4 +38,3 @@ The SQL files are located insisde the folder
 
 + [Juan Tur](https://github.com/jtur17) 
 + [Gema Marquínez ](https://github.com/gmarquinez)
-
