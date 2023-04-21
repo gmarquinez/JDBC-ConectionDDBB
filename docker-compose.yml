@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_DATABASE=biblioteca
+      - MYSQL_ROOT_PASSWORD=1
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/01_create_tables.sql:/docker-entrypoint-initdb.d/01_create_tables.sql
+      - ./db/02_fill_tables.sql:/docker-entrypoint-initdb.d/02_fill_tables.sql
+volumes:
+  db_data:
+
+

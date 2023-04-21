@@ -1,0 +1,31 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# IntelliJ files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven files
+target/
+pom.xml.lock
+release.properties
+dependency-reduced-pom.xml
+
+# Eclipse files
+.classpath
+.project
+.settings/
+.factorypath
+
+# Gradle files
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Other
+*.DS_Store
