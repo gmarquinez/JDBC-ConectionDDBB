@@ -11,15 +11,15 @@ public class Application {
     public static void main(String[] args) throws SQLException {
         try{
             openDatabaseConnection();
-           // deleteData("%");
-            //readData();
-//            createData(1, "12345" ,"Harry Potter", "Gabriel K.Q.", "Sudamericana", 5 , 3 );
-//            createData(2,"123456" ,"Harry", "Gabriel K.Q.", "Sudamericana", 6 , 3 );
-//            createData(3,"123457" ,"Harry Pot", "Gabriel K.Q.", "Sudamericana", 7 , 3 );
-//            readData();
-//            updateData(3,"456789","HOBBIT", "G.G.M", "Planeta", 6 , 4  );
-//            deleteData("12345");
-            //readData();
+            deleteData("%");
+            readData();
+            createData(1, "12345" ,"Harry Potter", "Gabriel K.Q.", "Sudamericana", 5 , 3 );
+            createData(2,"123456" ,"Harry", "Gabriel K.Q.", "Sudamericana", 6 , 3 );
+            createData(3,"123457" ,"Harry Pot", "Gabriel K.Q.", "Sudamericana", 7 , 3 );
+            readData();
+            updateData(3,"456789","HOBBIT", "G.G.M", "Planeta", 6 , 4  );
+            deleteData("12345");
+            readData();
         } finally {
              closeDatabaseConnection();
         }
